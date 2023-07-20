@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FruitShopByCollectionViewCell" id="gTV-IL-0wX" customClass="FruitShopByCollectionViewCell" customModule="PageUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="205"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="205"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zz9-MN-NLa">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="205"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zz9-MN-NLa" secondAttribute="trailing" id="T9c-kP-QeD"/>
+                <constraint firstItem="Zz9-MN-NLa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="U5d-Cj-n2O"/>
+                <constraint firstAttribute="bottom" secondItem="Zz9-MN-NLa" secondAttribute="bottom" id="hGd-A0-EyN"/>
+                <constraint firstItem="Zz9-MN-NLa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tI6-H0-TBg"/>
+            </constraints>
+            <connections>
+                <outlet property="fruitShopImage" destination="Zz9-MN-NLa" id="6Zv-8z-jEA"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="109"/>
+        </collectionViewCell>
+    </objects>
+</document>

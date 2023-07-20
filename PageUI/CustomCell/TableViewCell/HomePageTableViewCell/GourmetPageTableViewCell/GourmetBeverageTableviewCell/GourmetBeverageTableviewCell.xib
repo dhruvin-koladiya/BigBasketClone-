@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GourmetBeverageTableviewCell" id="KGk-i7-Jjw" customClass="GourmetBeverageTableviewCell" customModule="PageUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="460"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="460"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEVERAGES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbP-mA-M2x">
+                        <rect key="frame" x="8" y="5" width="398" height="60"/>
+                        <color key="backgroundColor" red="0.31380853056907654" green="0.42799258232116699" blue="0.44176912307739258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="0Wc-da-yvx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XW2-c7-vWe">
+                        <rect key="frame" x="8" y="65" width="398" height="395"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="mxs-gL-nHj">
+                            <size key="itemSize" width="197" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jbP-mA-M2x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="63b-Kd-kvF"/>
+                    <constraint firstAttribute="trailing" secondItem="XW2-c7-vWe" secondAttribute="trailing" constant="8" id="Ikp-32-c3O"/>
+                    <constraint firstAttribute="bottom" secondItem="XW2-c7-vWe" secondAttribute="bottom" id="Kmo-nl-IvC"/>
+                    <constraint firstItem="jbP-mA-M2x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="bWh-65-LMT"/>
+                    <constraint firstItem="XW2-c7-vWe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="mui-Q7-Wmr"/>
+                    <constraint firstItem="XW2-c7-vWe" firstAttribute="top" secondItem="jbP-mA-M2x" secondAttribute="bottom" id="pAp-Zg-Xzg"/>
+                    <constraint firstAttribute="trailing" secondItem="jbP-mA-M2x" secondAttribute="trailing" constant="8" id="tXQ-dt-CAK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="beverageCollectionview" destination="XW2-c7-vWe" id="EMs-mF-aFg"/>
+                <outlet property="beverageLabel" destination="jbP-mA-M2x" id="2wb-GM-cY0"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

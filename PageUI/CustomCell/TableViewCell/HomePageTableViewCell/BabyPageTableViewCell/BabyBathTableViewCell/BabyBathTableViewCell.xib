@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BabyBathTableViewCell" id="KGk-i7-Jjw" customClass="BabyBathTableViewCell" customModule="PageUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="460"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="460"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baby Bath &amp; Hygiene" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utH-PA-Yce">
+                        <rect key="frame" x="8" y="5" width="398" height="60"/>
+                        <color key="backgroundColor" red="0.2627450980392157" green="0.38431372549019605" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="fJi-fP-kd6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-8j-zYQ">
+                        <rect key="frame" x="8" y="65" width="398" height="395"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ezi-qB-Lbu">
+                            <size key="itemSize" width="197" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Cbh-8j-zYQ" secondAttribute="bottom" id="YDw-CG-9Jb"/>
+                    <constraint firstItem="Cbh-8j-zYQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="cbD-ue-s7w"/>
+                    <constraint firstAttribute="trailing" secondItem="utH-PA-Yce" secondAttribute="trailing" constant="8" id="pjf-wl-ljo"/>
+                    <constraint firstItem="utH-PA-Yce" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uy0-o1-BqP"/>
+                    <constraint firstItem="utH-PA-Yce" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="v5E-Mp-Daa"/>
+                    <constraint firstItem="Cbh-8j-zYQ" firstAttribute="top" secondItem="utH-PA-Yce" secondAttribute="bottom" id="vB6-Uu-V37"/>
+                    <constraint firstAttribute="trailing" secondItem="Cbh-8j-zYQ" secondAttribute="trailing" constant="8" id="xRP-ey-sgH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="babyBathCollectionview" destination="Cbh-8j-zYQ" id="8cb-fL-eTi"/>
+                <outlet property="bathLabel" destination="utH-PA-Yce" id="kJT-06-KxF"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

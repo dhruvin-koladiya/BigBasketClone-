@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageViewTableViewCell" id="KGk-i7-Jjw" customClass="ImageViewTableViewCell" customModule="PageUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KD-sQ-g3y">
+                        <rect key="frame" x="8" y="5" width="398" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basketImage" translatesAutoresizingMaskIntoConstraints="NO" id="BUF-9y-WmY">
+                                <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BUF-9y-WmY" secondAttribute="trailing" id="72H-Cb-Lqh"/>
+                            <constraint firstItem="BUF-9y-WmY" firstAttribute="leading" secondItem="1KD-sQ-g3y" secondAttribute="leading" id="EnT-2r-vK3"/>
+                            <constraint firstAttribute="height" constant="120" id="mbP-lx-nZb"/>
+                            <constraint firstAttribute="bottom" secondItem="BUF-9y-WmY" secondAttribute="bottom" id="pOg-eB-SYS"/>
+                            <constraint firstItem="BUF-9y-WmY" firstAttribute="top" secondItem="1KD-sQ-g3y" secondAttribute="top" id="xpR-RX-xzy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1KD-sQ-g3y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="10C-8o-a1M"/>
+                    <constraint firstAttribute="trailing" secondItem="1KD-sQ-g3y" secondAttribute="trailing" constant="8" id="QdP-DY-Zuf"/>
+                    <constraint firstItem="1KD-sQ-g3y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="WwJ-2r-rlH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imagesView" destination="1KD-sQ-g3y" id="XIC-s5-bRS"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="77.678571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="basketImage" width="404" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

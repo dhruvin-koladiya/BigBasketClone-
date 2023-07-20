@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HarImageTableViewCell6" id="KGk-i7-Jjw" customClass="HarImageTableViewCell6" customModule="PageUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="460"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="460"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="harImage7" translatesAutoresizingMaskIntoConstraints="NO" id="dvP-aR-GTy">
+                        <rect key="frame" x="8" y="5" width="398" height="455"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dvP-aR-GTy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="atz-JJ-apQ"/>
+                    <constraint firstAttribute="trailing" secondItem="dvP-aR-GTy" secondAttribute="trailing" constant="8" id="fVf-2k-iPZ"/>
+                    <constraint firstAttribute="bottom" secondItem="dvP-aR-GTy" secondAttribute="bottom" id="gBR-Ho-Rso"/>
+                    <constraint firstItem="dvP-aR-GTy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="orW-0l-FKf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="image6" destination="dvP-aR-GTy" id="Z1o-8u-vja"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="harImage7" width="673" height="766"/>
+    </resources>
+</document>

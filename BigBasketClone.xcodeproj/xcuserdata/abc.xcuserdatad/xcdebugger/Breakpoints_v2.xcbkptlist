@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FD096A10-10DA-4863-89E8-577365B8A8FC"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "57598F35-5F0A-4FD0-B647-AA3CEF1813D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBFA69A9-9F73-4A27-8C53-0B94752695DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PageUI/CustomCell/TableViewCell/HomePageTableViewCell/BeautyPageTableViewCell/BeautyBannerTableViewCell1/BeautyBannerTableViewCell1.swift"
+            startingColumnNumber = "36"
+            endingColumnNumber = "6"
+            startingLineNumber = "48"
+            endingLineNumber = "58"
+            landmarkName = "stopAutomaticScrolling()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

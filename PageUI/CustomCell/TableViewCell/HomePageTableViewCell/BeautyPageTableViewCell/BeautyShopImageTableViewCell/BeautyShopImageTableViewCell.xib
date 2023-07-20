@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeautyShopImageTableViewCell" id="KGk-i7-Jjw" customClass="BeautyShopImageTableViewCell" customModule="PageUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beautyShop" translatesAutoresizingMaskIntoConstraints="NO" id="fYS-GE-GLU">
+                        <rect key="frame" x="8" y="5" width="398" height="245"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fYS-GE-GLU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="UUx-Ay-THo"/>
+                    <constraint firstItem="fYS-GE-GLU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Z5H-6Y-jkc"/>
+                    <constraint firstAttribute="trailing" secondItem="fYS-GE-GLU" secondAttribute="trailing" constant="8" id="cdN-18-JAX"/>
+                    <constraint firstAttribute="bottom" secondItem="fYS-GE-GLU" secondAttribute="bottom" id="dZ0-dd-CSV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="beautyShopImage" destination="fYS-GE-GLU" id="a7t-64-He3"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="beautyShop" width="414" height="250"/>
+    </resources>
+</document>
